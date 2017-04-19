@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LabGoodObjectServer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LabGoodObjectServer_jar</output-path>
+    <root id="archive" name="LabGoodObjectServer.jar">
+      <element id="module-output" name="LabGoodObjectServer" />
+    </root>
+  </artifact>
+</component>
