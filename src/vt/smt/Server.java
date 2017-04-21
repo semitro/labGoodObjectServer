@@ -1,6 +1,7 @@
 package vt.smt;
 
 
+import javafx.util.Pair;
 import vt.smt.Commands.*;
 import java.io.IOException;
 
@@ -18,6 +19,7 @@ public class Server {
         }
     }
     public void start(){
+
         Thread t = Thread.currentThread();
         while(true){
             try {
@@ -25,15 +27,28 @@ public class Server {
             }catch (InterruptedException e){
                 System.out.println(e.getMessage());
             }
-            ServerCommand command = receiver.nextCommand();
-            if(command != null)
-                execute(command);
+            // Пара, чтобы держать обратную связь с клиентом
+            Pair<Client,ServerCommand> p = receiver.nextCommand();
+            if(p.getValue() != null)
+                execute(p);
         }
 
     }
-    private void execute(ServerCommand command){
+    private void execute(Pair<Client,ServerCommand> request){
+        ServerCommand command = request.getValue();
+        Client client = request.getKey();
         if(command instanceof SaveOnServer){
             System.out.println(((SaveOnServer) command).getData().size());
         }
+        else
+        if(command instanceof GetBearsFromServer){
+            try {
+                client.getObjectOutStrem().writeObject(new Toy("Медведь с Луны"));
+
+            }catch (IOException e){
+                System.out.println("Беда в записи медведя на орбиту");
+            }
+        }
     }
+
 }

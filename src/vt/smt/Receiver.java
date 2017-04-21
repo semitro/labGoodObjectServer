@@ -1,9 +1,11 @@
 package vt.smt;
 
 
+import javafx.util.Pair;
 import vt.smt.Commands.*;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.util.LinkedList;
 import java.util.Observer;
@@ -22,17 +24,22 @@ class Receiver{
     }
 
     private ConcurrentLinkedDeque<Client> clients = new ConcurrentLinkedDeque<>();
-    ServerCommand nextCommand(){
+    Pair<Client,ServerCommand> nextCommand(){
         for(Client currentClient : clients) {
             try {
-                return (ServerCommand) currentClient.getObjectInputStream().readObject();
+                return new Pair<>
+                        (currentClient, (ServerCommand) currentClient.getObjectInputStream().readObject());
             }catch (ClassNotFoundException e){
                 System.out.println("Беда в next command:");
                 System.out.println(e.getMessage());
             }
             catch (IOException e){
-                System.out.println("next ommand: ioexc");
+                System.out.println("next command: ioexc");
                 System.out.println(e.getMessage());
+            }
+            catch (ClassCastException e){
+                System.err.println("Клиент" +currentClient.getSocket().getInetAddress() +
+                        "попытался отправить что-то, не являющеея ServerCommand");
             }
         }
         return null;

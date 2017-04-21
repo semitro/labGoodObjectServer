@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Data (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/vt/smt/Commands/Data.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

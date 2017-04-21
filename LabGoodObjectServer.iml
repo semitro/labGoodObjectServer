@@ -7,5 +7,12 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="DataShare" level="project" />
+    <orderEntry type="library" name="Data" level="project" />
+    <orderEntry type="library" name="Data (2)" level="project" />
+    <orderEntry type="library" name="Data (копия)" level="project" />
+    <orderEntry type="library" name="DataShare (2)" level="project" />
+    <orderEntry type="library" name="DataShare (3)" level="project" />
+    <orderEntry type="library" name="postgresql-42" level="project" />
   </component>
 </module>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="bears@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.0">
+    <root id="1"/>
+    <database id="2" parent="1" name="bears">
+      <ObjectId>16436</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-04-21.22:49:44.344</IntrospectionTimestamp>
+      <IntrospectionStateNumber>752</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="5" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_temp_1">
+      <ObjectId>11215</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11216</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="information_schema">
+      <ObjectId>11522</ObjectId>
+    </schema>
+    <sequence id="9" parent="3" name="bear_id_seq">
+      <ObjectId>16438</ObjectId>
+      <StateNumber>740</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="10" parent="3" name="bear">
+      <ObjectId>16440</ObjectId>
+      <StateNumber>752</StateNumber>
+    </table>
+    <column id="11" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>740</StateNumber>
+      <DefaultExpression>nextval(&apos;bear_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="12" parent="10" name="name">
+      <Position>2</Position>
+      <DataType>varchar(128)|0</DataType>
+      <StateNumber>740</StateNumber>
+    </column>
+    <column id="13" parent="10" name="weight">
+      <Position>6</Position>
+      <DataType>double precision|0</DataType>
+      <StateNumber>751</StateNumber>
+      <DefaultExpression>0.5</DefaultExpression>
+    </column>
+    <column id="14" parent="10" name="isclean">
+      <Position>7</Position>
+      <DataType>boolean|0</DataType>
+      <StateNumber>752</StateNumber>
+      <DefaultExpression>false</DefaultExpression>
+    </column>
+    <index id="15" parent="10" name="bear_pkey">
+      <ObjectId>16445</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="16" parent="10" name="bear_pkey">
+      <ObjectId>16446</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>bear_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
