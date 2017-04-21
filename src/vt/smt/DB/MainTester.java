@@ -12,26 +12,7 @@ import javax.sql.rowset.CachedRowSet;
 
 public class MainTester {
     public static void main(String[] arg) {
-        try {
-            Class.forName("org.postgresql.Driver");
-            Properties user = new Properties();
-            user.setProperty("password","bear");
-            user.setProperty("name","bear");
-            Connection connect =  DriverManager.getConnection(
-                    "jdbc:postgresql://localhost:5432/bears",
-                    user.getProperty("name"),user.getProperty("password"));
-            Statement statement = connect.createStatement();
-            CachedRowSet rs = new CachedRowSetImpl();
-            rs.populate(statement.executeQuery("select * from bear"));
-            while (rs.next()){
-                System.out.println(rs.getString("name"));
-                System.out.println(rs.getString("weight"));
-            }
+        System.out.println(BearsInteraction.getInstance().getAllBears());
 
-
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
     }
 }
