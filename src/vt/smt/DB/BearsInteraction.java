@@ -32,6 +32,7 @@ public class BearsInteraction {
             bearsSet = new CachedRowSetImpl();
             bearsSet.populate(statement.executeQuery("select * from Bear"));
             bearsCashe = getBearsFromDB();
+            System.out.println(bearsCashe);
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
@@ -43,6 +44,7 @@ public class BearsInteraction {
             instance = new BearsInteraction();
          return instance;
     }
+
     private LinkedList<Toy> getBearsFromDB(){
         try {
             LinkedList<Toy> ans = new LinkedList<>();
@@ -67,4 +69,13 @@ public class BearsInteraction {
         return bearsCashe;
     }
     // Добавить синхронизацию!!
+    public void removeBear(int index){
+        bearsCashe.remove(index);
+    }
+    public void changeBear(int index, Toy newBear){
+        if(index >= 0 && index <bearsCashe.size())
+            bearsCashe.set(index,newBear);
+        else
+            System.out.println("Попытка изменить медведя с несуществующим индексом");
+    }
 }

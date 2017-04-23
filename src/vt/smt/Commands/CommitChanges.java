@@ -5,6 +5,7 @@ import com.sun.istack.internal.Nullable;
 import java.awt.image.BufferedImage;
 
 /**
+ * Зафиксировать изменения в базе данных
  * Фотографируем посмевшего сделать коммит нашей базы данных.
  */
 public class CommitChanges implements ServerCommand {

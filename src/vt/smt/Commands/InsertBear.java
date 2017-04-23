@@ -5,10 +5,10 @@ package vt.smt.Commands;
  */
 import com.sun.istack.internal.NotNull;
 import vt.smt.Data.Toy;
-public class InesrtBear implements  ServerCommand {
-    Toy bear;
-    int index;
-    public InesrtBear(@NotNull Toy bear, int index){
+public class InsertBear implements  ServerCommand, ServerAnswer {
+    private Toy bear;
+    private int index;
+    public InsertBear(@NotNull Toy bear, int index){
         this.bear = new Toy(bear);
         this.index = index;
     }

@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
-
+import vt.smt.Commands.*;
 /**
  * Клиент инкапсулирует сокет и связанный с ним поток объектов
  */
@@ -23,8 +23,11 @@ public class Client {
     public Socket getSocket(){return socket;}
     private ObjectInputStream ois;
     private ObjectOutputStream out;
-    // Для обратоног общения
-    public ObjectOutputStream getObjectOutStrem(){return out;}
+
+    public void sendCommand(ServerAnswer command) throws IOException{
+        out.writeObject(command);
+        System.out.println("Отправил команду " + command);
+    }
     public ObjectInputStream getObjectInputStream(){
         return ois;
     }

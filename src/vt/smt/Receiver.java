@@ -9,6 +9,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Observer;
 import java.util.concurrent.ConcurrentLinkedDeque;
 /**
@@ -16,42 +17,35 @@ import java.util.concurrent.ConcurrentLinkedDeque;
  */
 class Receiver{
     private ServerSocket socket;
-    public Receiver(int port) throws IOException{
+    private Server executor;
+    public Receiver(int port, Server executor) throws IOException{
         socket = new ServerSocket(port);
+        this.executor = executor;
         Thread t = new Thread(this::listen);
-        t.setDaemon(true);
         t.start();
         System.out.println("Сервер запущен.");
     }
 
     private ConcurrentLinkedDeque<Client> clients = new ConcurrentLinkedDeque<>();
-    Pair<Client,ServerCommand> nextCommand(){
-        for(Client currentClient : clients) {
-            try {
-                return new Pair<>
-                        (currentClient, (ServerCommand) currentClient.getObjectInputStream().readObject());
-            }catch (ClassNotFoundException e){
-                System.out.println("Беда в next command:");
-                System.out.println(e.getMessage());
-            } catch (ConnectionResetException e){
-                // Если кто-то отключился, до свидания
-                clients.remove(currentClient);
-            } catch (IOException e){
 
-            } catch (ClassCastException e){
-                System.err.println("Клиент" +currentClient.getSocket().getInetAddress() +
-                        "попытался отправить что-то, не являющеея ServerCommand");
+    public void sendToAll(ServerAnswer command){
+        for(Client currentClient : clients){
+            try {
+                currentClient.sendCommand(command);
+            } catch (IOException bad) {
+                System.out.println("Receiver::sendToAll не удалось отправить команду");
+                System.out.println(bad.getMessage());
             }
         }
-        return null;
     }
-
-    //Добавить демон удаления ушедших клиетов ?
+    //Добавить демон удаления ушедших клиетов
     private void listen(){
         while (true) {
             try {
                 Client newClient = new Client(socket.accept());
                 clients.add(newClient);
+                ClientHandler handler = new ClientHandler(newClient,executor);
+                handler.start();
                 System.out.println("Подключился новый клиент" + newClient.getSocket().getInetAddress());
             } catch (IOException e) {
                 System.out.println(e.getMessage());
