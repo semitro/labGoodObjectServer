@@ -2,6 +2,7 @@ package vt.smt;
 
 
 import javafx.util.Pair;
+import sun.net.ConnectionResetException;
 import vt.smt.Commands.*;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -32,12 +33,12 @@ class Receiver{
             }catch (ClassNotFoundException e){
                 System.out.println("Беда в next command:");
                 System.out.println(e.getMessage());
-            }
-            catch (IOException e){
-                System.out.println("next command: ioexc");
-                System.out.println(e.getMessage());
-            }
-            catch (ClassCastException e){
+            } catch (ConnectionResetException e){
+                // Если кто-то отключился, до свидания
+                clients.remove(currentClient);
+            } catch (IOException e){
+
+            } catch (ClassCastException e){
                 System.err.println("Клиент" +currentClient.getSocket().getInetAddress() +
                         "попытался отправить что-то, не являющеея ServerCommand");
             }

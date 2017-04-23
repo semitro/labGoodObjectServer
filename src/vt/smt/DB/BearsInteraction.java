@@ -1,15 +1,13 @@
 package vt.smt.DB;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.LinkedList;
 import java.util.Properties;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
 import com.sun.rowset.CachedRowSetImpl;
-import vt.smt.Toy;
+import sun.awt.image.ImageWatched;
+import vt.smt.Data.Toy;
 
 import javax.sql.rowset.CachedRowSet;
 
@@ -20,7 +18,8 @@ public class BearsInteraction {
     private Properties user = new Properties();
     private Connection connect;
     private Statement statement;
-    CachedRowSet rs;
+    private CachedRowSet bearsSet;
+    private LinkedList<Toy> bearsCashe;
     private BearsInteraction(){
         try {
             Class.forName("org.postgresql.Driver");
@@ -30,34 +29,42 @@ public class BearsInteraction {
                     "jdbc:postgresql://localhost:5432/bears",
                     user.getProperty("name"), user.getProperty("password"));
             statement = connect.createStatement();
-            rs = new CachedRowSetImpl();
+            bearsSet = new CachedRowSetImpl();
+            bearsSet.populate(statement.executeQuery("select * from Bear"));
+            bearsCashe = getBearsFromDB();
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
     }
     static BearsInteraction instance;
+    // Доделать нормальную обработку данных!
     public static BearsInteraction getInstance(){
         if(instance == null)
             instance = new BearsInteraction();
          return instance;
     }
-    public LinkedList<Toy> getAllBears(){
+    private LinkedList<Toy> getBearsFromDB(){
         try {
-            rs.populate(statement.executeQuery("select * from bear"));
             LinkedList<Toy> ans = new LinkedList<>();
-
-            while(rs.next()){
+            // bearsSet.next();
+            while(bearsSet.next()){
                 ans.add(new Toy(
-                        rs.getString("name"),
-                        rs.getFloat("weight"),
-                        rs.getBoolean("isClean")
+                        bearsSet.getString("name"),
+                        bearsSet.getFloat("weight"),
+                        bearsSet.getBoolean("isClean")
                 ));
             }
+
             return ans;
         }catch (SQLException e){
-            System.out.println("BearsIneraction::getAllBears(): плохой запрос");
+            System.out.println("BearsIneraction::getAllBearsFromDB(): плохой запрос");
             System.out.println(e.getMessage());
         }
         return null;
     }
+    // Возможно, следует добавить копирование
+    public LinkedList<Toy> getAllBears(){
+        return bearsCashe;
+    }
+    // Добавить синхронизацию!!
 }
