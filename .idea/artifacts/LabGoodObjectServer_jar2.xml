@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LabGoodObjectServer:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/LabGoodObjectServer_jar2</output-path>
+    <root id="archive" name="LabGoodObjectServer.jar">
+      <element id="module-output" name="LabGoodObjectServer" />
+      <element id="library" level="project" name="DataShare" />
+      <element id="library" level="project" name="DataShare (2)" />
+      <element id="library" level="project" name="Data (2)" />
+      <element id="library" level="project" name="Data" />
+      <element id="library" level="project" name="Data (копия)" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/postgresql-42.0.0.jar" path-in-jar="/" />
+      <element id="library" level="project" name="DataShare (3)" />
+      <element id="library" level="project" name="postgresql-42" />
+    </root>
+  </artifact>
+</component>

@@ -23,7 +23,6 @@ public class Client {
     public Socket getSocket(){return socket;}
     private ObjectInputStream ois;
     private ObjectOutputStream out;
-
     public void sendCommand(ServerAnswer command) throws IOException{
         out.writeObject(command);
         System.out.println("Отправил команду " + command);

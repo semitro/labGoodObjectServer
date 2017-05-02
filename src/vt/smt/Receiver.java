@@ -18,6 +18,8 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 class Receiver{
     private ServerSocket socket;
     private Server executor;
+    private ConcurrentLinkedDeque<Client> clients = new ConcurrentLinkedDeque<>();
+
     public Receiver(int port, Server executor) throws IOException{
         socket = new ServerSocket(port);
         this.executor = executor;
@@ -25,8 +27,6 @@ class Receiver{
         t.start();
         System.out.println("Сервер запущен.");
     }
-
-    private ConcurrentLinkedDeque<Client> clients = new ConcurrentLinkedDeque<>();
 
     public void sendToAll(ServerAnswer command){
         for(Client currentClient : clients){
@@ -46,6 +46,7 @@ class Receiver{
                 clients.add(newClient);
                 ClientHandler handler = new ClientHandler(newClient,executor);
                 handler.start();
+                newClient.sendCommand(new vt.smt.Commands.Message("Добро пожаловать во Вселенскую Берлогу"));
                 System.out.println("Подключился новый клиент" + newClient.getSocket().getInetAddress());
             } catch (IOException e) {
                 System.out.println(e.getMessage());

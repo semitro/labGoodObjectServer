@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>516</x>
+      <y>132</y>
+      <w>282</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>Server
+--
++ Server()
++ execute(reques: Pair&lt;Client,ServerCommand&gt;): void
+- executeModify(command: ServerCommand, client: Client): void
+-
+- receiver: Receiver</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>552</x>
+      <y>366</y>
+      <w>84</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Data</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>564</x>
+      <y>390</y>
+      <w>60</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>Toy</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>18</x>
+      <y>174</y>
+      <w>72</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>ServerAnswer
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>108</x>
+      <y>174</y>
+      <w>84</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>ServerCommand
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>240</y>
+      <w>174</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>ChangeBear
+--
++ ChangeBear(newBear: Toy,index: int)
++ ChangeBear(copy: ChangeBear)
++ getIndex(): int
++ getBear(): Toy
+-
+# newBear: Toy
+# index: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>54</x>
+      <y>210</y>
+      <w>60</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>96</x>
+      <y>210</y>
+      <w>54</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>324</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Message
+--
++ Message(text: String)
++ getMessage(): String
+-
+# message: String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>210</y>
+      <w>36</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;110.0;20.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>162</x>
+      <y>330</y>
+      <w>60</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>SortBears
+--
++SortBears()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>168</x>
+      <y>210</y>
+      <w>54</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;90.0;50.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>258</x>
+      <y>114</y>
+      <w>192</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Receiver
+--
++ Receiver(port: int, executor: Server)
++ sendToAll(command: ServerAnswer): void
+- listen()
+--
+- executor: Server
+- socket: ServerSocket
+- clients: ConcurrentLinkedDeque&lt;Client&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>282</y>
+      <w>216</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Client
+--
++ Client(socket: Socket)
++ getSocket(): Socket
++ sendCommand(command: ServerAnswer): void
++ getObjectInputStream(): ObjectInputStream
+--
+- socket: Socket
+- ois: ObjectInputStream
+- out: ObjectOutputStream
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>204</y>
+      <w>210</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>ClientHandler
+--
++ ClientHandler(client: Client, server: Server)
++ run()
+--
+- client: Client
+- executor: Server
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>444</x>
+      <y>114</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>354</x>
+      <y>258</y>
+      <w>18</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>354</x>
+      <y>186</y>
+      <w>18</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>162</y>
+      <w>66</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>174</x>
+      <y>192</y>
+      <w>84</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>168</x>
+      <y>150</y>
+      <w>90</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>130.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>54</x>
+      <y>150</y>
+      <w>132</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;50.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>228</y>
+      <w>282</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>BearsInteraction
+--
+- BearsInteraction()
+_+ getInstance(): BearsInteraction_
++ getAllBears(): LinkedList&lt;Toy&gt;
++ removeBear(index: int)
++ changeBear(index: int, newBear: Toy)
++ insertBear(index: int, newBear: Toy)
++ sortBears(): void
+-
+- bearsCache: LinkedList&lt;Toy&gt;
+- instance: BearsInteraction</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>642</x>
+      <y>192</y>
+      <w>18</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>546</x>
+      <y>336</y>
+      <w>18</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>372</y>
+      <w>252</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;400.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>402</y>
+      <w>180</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;280.0;10.0</additional_attributes>
+  </element>
+</diagram>

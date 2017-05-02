@@ -1,5 +1,6 @@
 package vt.smt;
 
+import java.io.EOFException;
 import java.io.IOException;
 
 import javafx.util.Pair;
@@ -16,27 +17,31 @@ public class ClientHandler extends Thread{
         this.client = client;
         this.executor = server;
     }
-
     @Override
     public void run() {
         ServerCommand command = null;
         while (true) {
+            command = null;
             try {
-                command = null;
                 command = (ServerCommand) client.getObjectInputStream().readObject();
             }
-            catch (IOException | ClassNotFoundException | NullPointerException e) {
-                if(e != null && e.getMessage().contains("Connection reset")) {
-                    try {
-                        client.getSocket().close();
-                        client.getObjectInputStream().close();
-                        System.out.println("До встречи, " + client.getSocket().getInetAddress() + "!");
-                        return;
-                    }catch (IOException ex){
-                        System.out.println(ex.getMessage() + "\n - это случилось в ClientHandler");
-                        return;
-                    }
+            catch (EOFException e){
+                try {
+                    client.getSocket().close();
+                    client.getObjectInputStream().close();
+                    System.out.println("До встречи, " + client.getSocket().getInetAddress() + "!");
+                    return;
+                }catch (IOException exception){
+                    System.out.println("Мы хотели попрощаться клиентами, но словили catch в catch'е при попытке закрытия потока");
                 }
+            }
+            catch (IOException e) {
+                System.out.println(e.getMessage());
+                e.printStackTrace();
+                return;
+            }
+            catch (ClassNotFoundException | NullPointerException e){
+                System.out.println("Словил исключение в clientHandler::run (commandRecive-)");
                 System.out.println(e.getMessage());
             }
             executor.execute(new Pair<>(client, command));

@@ -12,5 +12,4 @@ public class SortBears implements ServerCommand {
     public SortBears(@Nullable Comparator<Toy> comp){
         this.comp = comp;
     }
-
 }

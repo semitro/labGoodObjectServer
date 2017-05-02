@@ -8,7 +8,7 @@ import java.io.IOException;
 import vt.smt.DB.BearsInteraction;
 
 /**
- * Created by semitro on 18.04.17.
+ * Сервер, по сути, штука, выполняющая пишедние команды
  */
 
 public class Server {
@@ -41,7 +41,25 @@ public class Server {
             BearsInteraction.getInstance().removeBear(((RemoveBear)command).getIndex());
             receiver.sendToAll(((RemoveBear)command));
         }
+        if(command instanceof InsertBear){
+            BearsInteraction.getInstance().insertBear(
+                    ((InsertBear)(command)).getIndex(),
+                    ((InsertBear)(command)).getBear()
+            );
+            receiver.sendToAll((InsertBear)command);
+        }
+        if(command instanceof SortBears){
+            BearsInteraction.getInstance().sortBears();
+            receiver.sendToAll(
+                    new SaveAllBears(BearsInteraction.getInstance().getAllBears()));
+            receiver.sendToAll(new Message(" \"Ну-ка, Мишки встали в ряд!\" - исполнено"));
+        }
+        if(command instanceof  CommitChanges){
+            BearsInteraction.getInstance().commitChanges();
+            receiver.sendToAll(new Message("Все изменения успешно зафиксированы."));
+        }
     }
+
     public void execute(Pair<Client,ServerCommand> request){
         if(request.getValue() == null)
             return;

@@ -7,11 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e28ee92-0c8c-4b2c-b84c-26f1518d0678" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vt/smt/Commands/SaveAllBears.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vt/smt/Commands/ServerAnswer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/LabGoodObjectServer_jar2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Commands/GetBearsFromServer.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Commands/InesrtBear.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Commands/SaveOnServer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/DB/MainTester.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/share/DataShare.jar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/share/DataShare/META-INF/INDEX.LIST" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/share/DataShare/META-INF/LICENSE" afterPath="" />
@@ -20,22 +21,20 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/share/DataShare/vt/smt/Cleanable.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/share/DataShare/vt/smt/PhysicalObject.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/share/DataShare/vt/smt/Toy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/vt/smt/Commands/SaveOnServer.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/vt/smt/Commands/GetBearsFromServer.java" afterPath="$PROJECT_DIR$/src/vt/smt/Commands/GetAllBears.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/vt/smt/Commands/InesrtBear.java" afterPath="$PROJECT_DIR$/src/vt/smt/Commands/InsertBear.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/vt/smt/DB/MainTester.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/2ede249a-c975-4212-9853-d6cce315473e/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/2ede249a-c975-4212-9853-d6cce315473e/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/2ede249a-c975-4212-9853-d6cce315473e/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/2ede249a-c975-4212-9853-d6cce315473e/_metadata_/metadata.values.at" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/LabGoodObjectServer_jar/LabGoodObjectServer.jar" afterPath="$PROJECT_DIR$/out/artifacts/LabGoodObjectServer_jar/LabGoodObjectServer.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Client.class" afterPath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Commands/ChangeBear.class" afterPath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Commands/ChangeBear.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Commands/CommitChanges.class" afterPath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Commands/CommitChanges.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Commands/RemoveBear.class" afterPath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Commands/RemoveBear.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/ClientHandler.class" afterPath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/ClientHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/DB/BearsInteraction.class" afterPath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/DB/BearsInteraction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Main.class" afterPath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Receiver.class" afterPath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Receiver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Server.class" afterPath="$PROJECT_DIR$/out/production/LabGoodObjectServer/vt/smt/Server.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/2ede249a-c975-4212-9853-d6cce315473e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/2ede249a-c975-4212-9853-d6cce315473e.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vt/smt/Client.java" afterPath="$PROJECT_DIR$/src/vt/smt/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vt/smt/Commands/ChangeBear.java" afterPath="$PROJECT_DIR$/src/vt/smt/Commands/ChangeBear.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vt/smt/Commands/CommitChanges.java" afterPath="$PROJECT_DIR$/src/vt/smt/Commands/CommitChanges.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vt/smt/Commands/RemoveBear.java" afterPath="$PROJECT_DIR$/src/vt/smt/Commands/RemoveBear.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vt/smt/ClientHandler.java" afterPath="$PROJECT_DIR$/src/vt/smt/ClientHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vt/smt/Commands/SortBears.java" afterPath="$PROJECT_DIR$/src/vt/smt/Commands/SortBears.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vt/smt/DB/BearsInteraction.java" afterPath="$PROJECT_DIR$/src/vt/smt/DB/BearsInteraction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vt/smt/Receiver.java" afterPath="$PROJECT_DIR$/src/vt/smt/Receiver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vt/smt/Server.java" afterPath="$PROJECT_DIR$/src/vt/smt/Server.java" />
@@ -86,74 +85,22 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="bear" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="bears@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PgConnection.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/jdbc/PgConnection.class">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/vt/smt/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#9899#10045#0" expanded="true" />
-                <element signature="e#10044#10045#0" expanded="true" />
-                <marker date="1492800722881" expanded="true" signature="42368:42391" ph="select curre... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vt/smt/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-              <folding>
-                <element signature="e#987#988#0" expanded="true" />
-                <element signature="e#1013#1014#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Driver.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/Driver.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SaveAllBears.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/SaveAllBears.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="198">
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
-                <element signature="e#320#321#0" expanded="true" />
+                <element signature="method#Server#0;class#Server#0" expanded="false" />
+                <element signature="method#start#0;class#Server#0" expanded="false" />
+                <element signature="method#executeModify#0;class#Server#0" expanded="false" />
+                <element signature="e#766#802#0" expanded="false" />
+                <element signature="method#execute#0;class#Server#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -162,34 +109,51 @@
       <file leaf-file-name="BearsInteraction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vt/smt/DB/BearsInteraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="72" column="33" lean-forward="false" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+            <state relative-caret-position="450">
+              <caret line="82" column="72" lean-forward="false" selection-start-line="82" selection-start-column="72" selection-end-line="82" selection-end-column="72" />
               <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="method#BearsInteraction#0;class#BearsInteraction#0" expanded="false" />
+                <element signature="method#getInstance#0;class#BearsInteraction#0" expanded="false" />
                 <element signature="method#getBearsFromDB#0;class#BearsInteraction#0" expanded="false" />
-                <element signature="e#2362#2363#0" expanded="true" />
-                <element signature="e#2402#2403#0" expanded="true" />
+                <element signature="e#2377#2378#0" expanded="false" />
+                <element signature="e#2410#2411#0" expanded="false" />
+                <element signature="e#3636#3637#0" expanded="false" />
+                <element signature="e#3676#3677#0" expanded="false" />
                 <element signature="method#changeBear#0;class#BearsInteraction#0" expanded="false" />
-                <marker date="1492983690577" expanded="true" signature="1087:1105" ph="select * fro... Bear" />
+                <element signature="method#insertBear#0;class#BearsInteraction#0" expanded="false" />
+                <element signature="e#4128#4129#0" expanded="false" />
+                <element signature="e#4172#4173#0" expanded="false" />
+                <marker date="1493320517996" expanded="true" signature="1116:1134" ph="select * fro... Bear" />
+                <marker date="1493320517996" expanded="true" signature="2772:2788" ph="DELETE from " />
+                <marker date="1493320517996" expanded="true" signature="2918:2965" ph="insert into bear... " />
+                <marker date="1493320517996" expanded="true" signature="2918:3047" ph="insert into bear... " />
+                <marker date="1493320517996" expanded="true" signature="2918:3067" ph="insert into bear... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainTester.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vt/smt/DB/MainTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+      <file leaf-file-name="bears.public.bear" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/60af071e/2ede249a-c975-4212-9853-d6cce315473e/bears.public.bear">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vt/smt/Main.java">
+      <file leaf-file-name="ServerCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/ServerCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -198,30 +162,78 @@
       <file leaf-file-name="Receiver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vt/smt/Receiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="38" column="9" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vt/smt/ClientHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="32" column="100" lean-forward="false" selection-start-line="32" selection-start-column="100" selection-end-line="32" selection-end-column="100" />
+            <state relative-caret-position="174">
+              <caret line="22" column="65" lean-forward="false" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#Receiver#0;class#Receiver#0" expanded="false" />
+                <element signature="method#sendToAll#0;class#Receiver#0" expanded="false" />
+                <element signature="method#listen#0;class#Receiver#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/vt/smt/Server.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vt/smt/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+            <state relative-caret-position="198">
+              <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="method#Client#0;class#Client#0" expanded="false" />
+                <element signature="method#sendCommand#0;class#Client#0" expanded="false" />
+                <element signature="e#986#987#0" expanded="false" />
+                <element signature="e#1012#1013#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAllBears.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/GetAllBears.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SortBears.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/SortBears.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#300#301#0" expanded="false" />
+                <element signature="e#332#333#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaveAllBears.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/SaveAllBears.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#320#321#0" expanded="false" />
+                <element signature="e#371#372#0" expanded="false" />
+                <element signature="e#409#410#0" expanded="false" />
+                <element signature="e#436#437#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vt/smt/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -264,9 +276,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/vt/smt/Commands/Command.java" />
-        <option value="$PROJECT_DIR$/src/vt/smt/Commands/ServerCommand.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2ede249a-c975-4212-9853-d6cce315473e/console_1.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2ede249a-c975-4212-9853-d6cce315473e/console.sql" />
         <option value="$PROJECT_DIR$/src/vt/smt/DB/MainTester.java" />
         <option value="$PROJECT_DIR$/share/DataShare.jar!/vt/smt/PhysicalObject.class" />
         <option value="$PROJECT_DIR$/src/vt/smt/Data/AlreadyCleanException.java" />
@@ -281,7 +291,6 @@
         <option value="$PROJECT_DIR$/src/vt/smt/Data/Toy.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/Data/XmlParser.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/Data/PhysicalObject.java" />
-        <option value="$PROJECT_DIR$/src/vt/smt/Commands/SortBears.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/Commands/ServerAnswers/ServerAnswer.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/Commands/ServerAnswers/Message.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/Commands/ServerAnswers/updateBear.java" />
@@ -298,10 +307,16 @@
         <option value="$PROJECT_DIR$/src/vt/smt/Commands/InsertBear.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/Commands/ChangeBear.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/Commands/SaveAllBears.java" />
+        <option value="$PROJECT_DIR$/src/vt/smt/MainTester.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/Main.java" />
-        <option value="$PROJECT_DIR$/src/vt/smt/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/vt/smt/Commands/SortBears.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2ede249a-c975-4212-9853-d6cce315473e/console.sql" />
+        <option value="dbtable:/60af071e/2ede249a-c975-4212-9853-d6cce315473e/bears.public.bear" />
+        <option value="dbtable:/60af071e/2ede249a-c975-4212-9853-d6cce315473e/bears.public.bearss" />
+        <option value="$PROJECT_DIR$/src/vt/smt/Commands/ServerCommand.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/Client.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/Receiver.java" />
+        <option value="$PROJECT_DIR$/src/vt/smt/ClientHandler.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/DB/BearsInteraction.java" />
         <option value="$PROJECT_DIR$/src/vt/smt/Server.java" />
       </list>
@@ -314,7 +329,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1366" />
     <option name="y" value="24" />
     <option name="width" value="1366" />
     <option name="height" value="744" />
@@ -441,22 +455,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabGoodObjectServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabGoodObjectServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15300146" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/vt/smt/Commands" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
   </component>
   <component name="RecentsManager">
@@ -917,16 +945,27 @@
       <workItem from="1492942479386" duration="9133000" />
       <workItem from="1492953679261" duration="402000" />
       <workItem from="1492955444256" duration="6003000" />
-      <workItem from="1492963351394" duration="18657000" />
+      <workItem from="1492963351394" duration="18770000" />
+      <workItem from="1493019193107" duration="26000" />
+      <workItem from="1493019251893" duration="11124000" />
+      <workItem from="1493105330961" duration="1433000" />
+      <workItem from="1493135611261" duration="5105000" />
+      <workItem from="1493281475628" duration="14792000" />
+      <workItem from="1493310715173" duration="761000" />
+      <workItem from="1493318687397" duration="2196000" />
+      <workItem from="1493668684627" duration="950000" />
+      <workItem from="1493720453951" duration="881000" />
+      <workItem from="1493736754363" duration="2541000" />
+      <workItem from="1493742942358" duration="2440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63711000" />
+    <option name="totallyTimeSpent" value="106073000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1366" y="24" width="1366" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -937,14 +976,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36687306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30804953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40557274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40557274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31439394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21515152" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121212125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -958,7 +997,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20227273" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3111455" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3111455" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1002,7 +1041,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1011,49 +1050,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/jdk1.8.0_111/src.zip!/javax/sql/rowset/CachedRowSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14346">
-          <caret line="827" column="43" lean-forward="false" selection-start-line="827" selection-start-column="36" selection-end-line="827" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/share/DataShare.jar!/vt/smt/PhysicalObject.class" />
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Data/AlreadyCleanException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Data/Carlson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Data/Cleaner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Data/Mother.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Data/ThereIsNotHomeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/vt/smt/Data/Home.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1065">
@@ -1082,13 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Data/Toy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/vt/smt/Data/PhysicalObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1105,29 +1094,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/ServerAnswers/updateBear.java" />
     <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/ServerAnswers/UpdateBear.java" />
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/InsertBear.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/RemoveBear.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,34 +1105,220 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1">
           <caret line="492" column="16" lean-forward="false" selection-start-line="492" selection-start-column="16" selection-end-line="492" selection-end-column="16" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk1.8.0_111/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk1.8.0_111/src.zip!/java/util/AbstractSequentialList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="238" column="0" lean-forward="false" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk1.8.0_111/javafx-src.zip!/javafx/util/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/util/SharedTimer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/util/HostSpec.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/hostchooser/HostRequirement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/core/SocketFactoryFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/hostchooser/HostChooserFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/hostchooser/SingleHostChooser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/core/PGStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/core/v3/ConnectionFactoryImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/core/ConnectionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/core/v3/QueryExecutorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="1968" column="0" lean-forward="false" selection-start-line="1968" selection-start-column="0" selection-end-line="1968" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/PGProperty.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/jdbc/TimestampUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="875" column="0" lean-forward="false" selection-start-line="875" selection-start-column="0" selection-end-line="875" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/jdbc/PgConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2430">
+          <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/Driver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1962">
+          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vt/smt/MainTester.java" />
+    <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/InsertBear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vt/smt/Data/Toy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60af071e/2ede249a-c975-4212-9853-d6cce315473e/bears.public.bearss">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60af071e/2ede249a-c975-4212-9853-d6cce315473e/bears.public.bear">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2ede249a-c975-4212-9853-d6cce315473e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/ChangeBear.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#460#461#0" expanded="false" />
-            <element signature="e#488#489#0" expanded="false" />
-            <element signature="e#514#515#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/CommitChanges.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="216">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/ServerAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vt/smt/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vt/smt/DB/MainTester.java" />
+    <entry file="file://$PROJECT_DIR$/src/vt/smt/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#369#370#0" expanded="false" />
-            <element signature="e#414#415#0" expanded="false" />
-            <element signature="e#456#457#0" expanded="false" />
-            <element signature="e#489#490#0" expanded="false" />
+            <element signature="method#Client#0;class#Client#0" expanded="false" />
+            <element signature="method#sendCommand#0;class#Client#0" expanded="false" />
+            <element signature="e#986#987#0" expanded="false" />
+            <element signature="e#1012#1013#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1175,259 +1331,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/ServerAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/SortBears.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/ServerCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk1.8.0_111/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
-          <folding>
-            <element signature="e#9921#9922#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk1.8.0_111/src.zip!/java/util/AbstractSequentialList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="238" column="0" lean-forward="false" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
-          <folding>
-            <element signature="e#8871#8872#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk1.8.0_111/javafx-src.zip!/javafx/util/Pair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/util/SharedTimer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/util/HostSpec.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/hostchooser/HostRequirement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/core/SocketFactoryFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/hostchooser/HostChooserFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/hostchooser/SingleHostChooser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/core/PGStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#2109#2110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/core/v3/ConnectionFactoryImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/core/ConnectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/core/v3/QueryExecutorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="1968" column="0" lean-forward="false" selection-start-line="1968" selection-start-column="0" selection-end-line="1968" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/PGProperty.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <element signature="e#10075#10076#0" expanded="true" />
-            <element signature="e#10351#10352#0" expanded="true" />
-            <element signature="e#10426#10427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/jdbc/TimestampUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="875" column="0" lean-forward="false" selection-start-line="875" selection-start-column="0" selection-end-line="875" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/jdbc/PgConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9899#10045#0" expanded="true" />
-            <element signature="e#10044#10045#0" expanded="true" />
-            <marker date="1492800722881" expanded="true" signature="42368:42391" ph="select curre... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/postgresql-42.0.0.jar!/org/postgresql/Driver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/SaveAllBears.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#320#321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/DB/MainTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
           <folding>
-            <element signature="e#987#988#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#320#321#0" expanded="false" />
+            <element signature="e#371#372#0" expanded="false" />
+            <element signature="e#409#410#0" expanded="false" />
+            <element signature="e#436#437#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/ClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="32" column="100" lean-forward="false" selection-start-line="32" selection-start-column="100" selection-end-line="32" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="dbDummy://dbtable:/60af071e/2ede249a-c975-4212-9853-d6cce315473e/bears.public.bear">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vt/smt/Receiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="38" column="9" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+    <entry file="dbDummy://dbtable:/60af071e/2ede249a-c975-4212-9853-d6cce315473e/bears.public.bear">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vt/smt/Commands/SortBears.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#300#301#0" expanded="false" />
+            <element signature="e#332#333#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vt/smt/DB/BearsInteraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="72" column="33" lean-forward="false" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+        <state relative-caret-position="450">
+          <caret line="82" column="72" lean-forward="false" selection-start-line="82" selection-start-column="72" selection-end-line="82" selection-end-column="72" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#BearsInteraction#0;class#BearsInteraction#0" expanded="false" />
+            <element signature="method#getInstance#0;class#BearsInteraction#0" expanded="false" />
             <element signature="method#getBearsFromDB#0;class#BearsInteraction#0" expanded="false" />
-            <element signature="e#2362#2363#0" expanded="true" />
-            <element signature="e#2402#2403#0" expanded="true" />
+            <element signature="e#2377#2378#0" expanded="false" />
+            <element signature="e#2410#2411#0" expanded="false" />
+            <element signature="e#3636#3637#0" expanded="false" />
+            <element signature="e#3676#3677#0" expanded="false" />
             <element signature="method#changeBear#0;class#BearsInteraction#0" expanded="false" />
-            <marker date="1492983690577" expanded="true" signature="1087:1105" ph="select * fro... Bear" />
+            <element signature="method#insertBear#0;class#BearsInteraction#0" expanded="false" />
+            <element signature="e#4128#4129#0" expanded="false" />
+            <element signature="e#4172#4173#0" expanded="false" />
+            <marker date="1493320517996" expanded="true" signature="1116:1134" ph="select * fro... Bear" />
+            <marker date="1493320517996" expanded="true" signature="2772:2788" ph="DELETE from " />
+            <marker date="1493320517996" expanded="true" signature="2918:2965" ph="insert into bear... " />
+            <marker date="1493320517996" expanded="true" signature="2918:3047" ph="insert into bear... " />
+            <marker date="1493320517996" expanded="true" signature="2918:3067" ph="insert into bear... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60af071e/2ede249a-c975-4212-9853-d6cce315473e/bears.public.bear">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vt/smt/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vt/smt/Receiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="22" column="65" lean-forward="false" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+          <folding>
+            <element signature="method#Receiver#0;class#Receiver#0" expanded="false" />
+            <element signature="method#sendToAll#0;class#Receiver#0" expanded="false" />
+            <element signature="method#listen#0;class#Receiver#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vt/smt/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="198">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="method#Server#0;class#Server#0" expanded="false" />
+            <element signature="method#start#0;class#Server#0" expanded="false" />
+            <element signature="method#executeModify#0;class#Server#0" expanded="false" />
+            <element signature="e#766#802#0" expanded="false" />
+            <element signature="method#execute#0;class#Server#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1438,18 +1471,17 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="artifact" />
               <type id="javaee-facet-resources" />
-              <type id="library" />
+              <type id="artifact" />
               <type id="jpa-descriptors" />
+              <type id="library" />
             </show-content>
           </artifact-editor>
-          <last-edited>LabGoodObjectServer:jar</last-edited>
+          <last-edited>unnamed</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
