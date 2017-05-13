@@ -5,6 +5,8 @@ package vt.smt.Commands;
  */
 import com.sun.istack.internal.NotNull;
 import vt.smt.Data.Toy;
+
+
 public class ChangeBear implements ServerCommand, ServerAnswer{
     private int index;
     private Toy newBear;

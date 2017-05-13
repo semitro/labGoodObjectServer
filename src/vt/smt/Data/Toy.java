@@ -23,7 +23,7 @@ public class Toy extends PhysicalObject{
         super();
         this.name  = name;
         this.weight = weight;
-        this.isCleaning = isClean;
+        this.isClean= isClean;
 
     }
     public String getName(){
@@ -31,8 +31,7 @@ public class Toy extends PhysicalObject{
     }
     @Override
     public void cleanUp(){
-        isCleaning = true;
-        System.out.println(name + " - Убрано");
+        isClean = true;
     }
     @Override
     public String toString(){
@@ -40,6 +39,6 @@ public class Toy extends PhysicalObject{
     }
     @Override
     public int hashCode() {
-        return name.hashCode() + Double.hashCode(this.weight) + Boolean.hashCode(this.isCleaning);
+        return name.hashCode() + Double.hashCode(this.weight) + Boolean.hashCode(this.isClean);
     }
 }

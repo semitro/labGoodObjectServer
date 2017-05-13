@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-04-27.12:38:55.277</IntrospectionTimestamp>
-      <IntrospectionStateNumber>752</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-05-13.18:10:22.398</IntrospectionTimestamp>
+      <IntrospectionStateNumber>5794</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -34,43 +34,90 @@
       <StateNumber>740</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <table id="10" parent="3" name="bear">
+    <sequence id="10" parent="3" name="test_test_id_seq">
+      <ObjectId>27628</ObjectId>
+      <StateNumber>5794</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="11" parent="3" name="bear">
       <ObjectId>16440</ObjectId>
       <StateNumber>752</StateNumber>
     </table>
-    <column id="11" parent="10" name="id">
+    <table id="12" parent="3" name="test">
+      <ObjectId>27630</ObjectId>
+      <StateNumber>5794</StateNumber>
+    </table>
+    <column id="13" parent="11" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>740</StateNumber>
       <DefaultExpression>nextval(&apos;bear_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="12" parent="10" name="name">
+    <column id="14" parent="11" name="name">
       <Position>2</Position>
       <DataType>varchar(128)|0</DataType>
       <StateNumber>740</StateNumber>
     </column>
-    <column id="13" parent="10" name="weight">
+    <column id="15" parent="11" name="weight">
       <Position>6</Position>
       <DataType>double precision|0</DataType>
       <StateNumber>751</StateNumber>
       <DefaultExpression>0.5</DefaultExpression>
     </column>
-    <column id="14" parent="10" name="isclean">
+    <column id="16" parent="11" name="isclean">
       <Position>7</Position>
       <DataType>boolean|0</DataType>
       <StateNumber>752</StateNumber>
       <DefaultExpression>false</DefaultExpression>
     </column>
-    <index id="15" parent="10" name="bear_pkey">
+    <index id="17" parent="11" name="bear_pkey">
       <ObjectId>16445</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="16" parent="10" name="bear_pkey">
+    <key id="18" parent="11" name="bear_pkey">
       <ObjectId>16446</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>bear_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="19" parent="12" name="test_id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>5794</StateNumber>
+      <DefaultExpression>nextval(&apos;test_test_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="20" parent="12" name="x">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>5794</StateNumber>
+    </column>
+    <column id="21" parent="12" name="name">
+      <Position>3</Position>
+      <DataType>varchar(80)|0</DataType>
+      <StateNumber>5794</StateNumber>
+    </column>
+    <column id="22" parent="12" name="isclean">
+      <Position>4</Position>
+      <DataType>boolean|0</DataType>
+      <StateNumber>5794</StateNumber>
+    </column>
+    <column id="23" parent="12" name="weight">
+      <Position>5</Position>
+      <DataType>real|0</DataType>
+      <StateNumber>5794</StateNumber>
+    </column>
+    <index id="24" parent="12" name="test_pkey">
+      <ObjectId>27634</ObjectId>
+      <ColNames>test_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="25" parent="12" name="test_pkey">
+      <ObjectId>27635</ObjectId>
+      <ColNames>test_id</ColNames>
+      <UnderlyingIndexName>test_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
   </database-model>

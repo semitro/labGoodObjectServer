@@ -1,5 +1,7 @@
 package vt.smt.Data;
 
+import sun.font.PhysicalFont;
+
 import java.io.Serializable;
 
 /**
@@ -13,10 +15,10 @@ public abstract class PhysicalObject
         this.setisCleaning(copy.isClean());
     }
     // Вещи, которые могут быть в доме
-    protected boolean isCleaning;
+    protected boolean isClean = true;
     protected double weight; // Вес
     public void setisCleaning(boolean clean){
-        isCleaning = clean;
+        isClean = clean;
     }
     public void setWeight(double weight) {
         this.weight = weight;
@@ -25,19 +27,16 @@ public abstract class PhysicalObject
         return weight;
     }
     public PhysicalObject(){
-        java.util.Random rand = new java.util.Random();
-        isCleaning = rand.nextBoolean();
     }
     public void cleanUp() {
         // Поставить вещь на место - прибрать
-        isCleaning = true;
+        isClean = true;
     }
-    public boolean isClean(){return isCleaning;}
+    public boolean isClean(){return isClean;}
     @Override
     public int compareTo(PhysicalObject obj){
         return (int)Math.floor(this.getWeight()-obj.getWeight());
     }
-
     @Override
     public boolean equals(Object object){
         if(object instanceof PhysicalObject && this == object)
@@ -45,7 +44,6 @@ public abstract class PhysicalObject
         else
             return false;
     }
-
     @Override
     public String toString(){
         return new String();
