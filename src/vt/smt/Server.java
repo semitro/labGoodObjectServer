@@ -3,19 +3,23 @@ package vt.smt;
 
 import javafx.util.Pair;
 import vt.smt.Commands.*;
-import java.io.IOException;
-
 import vt.smt.DB.BearsInteraction;
+
+import java.io.IOException;
+import java.util.ResourceBundle;
 
 /**
  * Сервер, по сути, штука, выполняющая пишедние команды
  */
 
 public class Server {
+
     private Receiver receiver;
+    // Для отправки локализованных сообщений клиенту
+    private ResourceBundle resourceBundle;
     public Server(){
         try {
-           // BearsInteraction.getInstance();
+            resourceBundle = ResourceBundle.getBundle("vt/smt/Languages");
             receiver = new Receiver(2552,this);
         }catch (IOException e){
             System.out.println("Не удалось создат сервер.");
@@ -31,6 +35,7 @@ public class Server {
      */
     private synchronized void executeModify(ServerCommand command,Client client){
        // receiver.resetAllInputCommands();
+
         // Изеняем медведя на сервере и просим сделать то же самое у всех клиентов
         if(command instanceof ChangeBear) {
             BearsInteraction.getInstance().changeBear(
@@ -52,11 +57,22 @@ public class Server {
             BearsInteraction.getInstance().sortBears();
             receiver.sendToAll(
                     new SaveAllBears(BearsInteraction.getInstance().getAllBears()));
-            receiver.sendToAll(new Message(" \"Ну-ка, Мишки встали в ряд!\" - исполнено"));
+            receiver.sendLocaleMessageToAll("Answer.SortPerformed");
         }
         if(command instanceof  CommitChanges){
             BearsInteraction.getInstance().commitChanges();
-            receiver.sendToAll(new Message("Все изменения успешно зафиксированы."));
+            receiver.sendLocaleMessageToAll("Answer.CommitChangesPerformed");
+        }
+        if(command instanceof ChangeLocale){
+           client.setLocale( ((ChangeLocale)command).getLocale() );
+           resourceBundle = ResourceBundle.getBundle("vt/smt/Languages",client.getLocale());
+
+           try {
+               client.sendCommand(new Message(resourceBundle.getString("Answer.ChangeLocale")));
+           }catch (IOException e){
+               System.out.println("Это случается, когда command instanceof changeLocale");
+               e.printStackTrace();
+           }
         }
     }
 

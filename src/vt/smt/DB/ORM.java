@@ -14,11 +14,37 @@ import java.util.*;
  */
 
 public class ORM {
+    /**
+     * Метод, возвращающий SQL-запрос для замены объекта с указанным id
+     * На новый объект
+     *
+     * @param id - ид объекта в базе данных,
+     * @param newObject - Объект, на который следует заменить хранящийся в бд
+     *
+     */
+    public static String getUpdateObjectQuery(int id,Object newObject){
+        StringBuilder query = new StringBuilder(
+                "update " + newObject.getClass().getSimpleName()+ " \n set ");
+        Map<String,String> values = getAllValues(newObject);
+        values.forEach((key,value)->{
+            query.append(key + " = " + value + ",\n ");
+        });
+        // Удаляем последную лишнюю запятую
+        query.deleteCharAt(query.lastIndexOf(","));
+        query.append("where " + getID(newObject) + " = " + id);
+        query.append(';');
+        return query.toString();
+    }
+    /**
+     * Метод, генерирующий код создания таблицы по заданному обекту
+     * @param obj - объект, требующий отображения в бд
+     * @return SQL-запрос, создающий требуемую таблицу
+     */
     public static String getDDL(Object obj){
         //Строка, в которой постепенно будет формироваться запрос
         StringBuilder query = new StringBuilder("create table ");
         query.append(obj.getClass().getSimpleName() + "(\n ");
-        query.append(obj.getClass().getSimpleName()+"_id " + "serial primary key,\n ");
+        query.append(getID(obj) + "serial primary key,\n ");
             for (Field field : getAllPrimitives(obj.getClass())) {
                 query.append(field.getName() + " ");
                 query.append(toPostresType(field.getType().getSimpleName()) +",\n " );
@@ -123,5 +149,8 @@ public class ORM {
                 return "boolean";
         }
         return null;
+    }
+    private static String getID(Object object){
+        return object.getClass().getSimpleName() + "_id";
     }
 }

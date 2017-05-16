@@ -1,16 +1,11 @@
 package vt.smt;
 
 
-import javafx.util.Pair;
-import sun.net.ConnectionResetException;
-import vt.smt.Commands.*;
+import vt.smt.Commands.ServerAnswer;
+
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Observer;
+import java.util.ResourceBundle;
 import java.util.concurrent.ConcurrentLinkedDeque;
 /**
  * Created by semitro on 18.04.17.
@@ -34,6 +29,19 @@ class Receiver{
                 currentClient.sendCommand(command);
             } catch (IOException bad) {
                 System.out.println("Receiver::sendToAll не удалось отправить команду");
+                System.out.println(bad.getMessage());
+            }
+        }
+    }
+    // Оповещение с учётом локали
+    private ResourceBundle resourceBundle = ResourceBundle.getBundle("vt/smt/Languages");
+    public void sendLocaleMessageToAll(String key){
+        for(Client currentClient : clients){
+            try {
+                resourceBundle = ResourceBundle.getBundle("vt/smt/Languages", currentClient.getLocale());
+                currentClient.sendCommand( new vt.smt.Commands.Message(resourceBundle.getString(key)) );
+            } catch (IOException bad) {
+                System.out.println("Receiver::sendLocaleMessageToAll -  не удалось отправить команду");
                 System.out.println(bad.getMessage());
             }
         }

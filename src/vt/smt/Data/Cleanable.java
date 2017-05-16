@@ -5,6 +5,6 @@ package vt.smt.Data;
  */
 // Нечто, которое можно убрать на место / очистить
 public interface Cleanable {
-    void cleanUp() throws AlreadyCleanException;
+    void cleanUp();
     boolean isClean();
 }
