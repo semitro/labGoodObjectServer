@@ -26,6 +26,10 @@ public abstract class PhysicalObject
         return creationTime;
     }
 
+    public void setCreationTime(ZonedDateTime creationTime) {
+        this.creationTime = creationTime;
+    }
+
     public void setisCleaning(boolean clean){
         isClean = clean;
     }

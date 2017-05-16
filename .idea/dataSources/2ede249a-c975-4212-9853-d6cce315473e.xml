@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-05-13.18:10:22.398</IntrospectionTimestamp>
-      <IntrospectionStateNumber>5794</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-05-16.19:54:14.266</IntrospectionTimestamp>
+      <IntrospectionStateNumber>5817</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -35,89 +35,136 @@
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
     <sequence id="10" parent="3" name="test_test_id_seq">
-      <ObjectId>27628</ObjectId>
-      <StateNumber>5794</StateNumber>
+      <ObjectId>27647</ObjectId>
+      <StateNumber>5814</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <table id="11" parent="3" name="bear">
+    <sequence id="11" parent="3" name="toy_toy_id_seq">
+      <ObjectId>27655</ObjectId>
+      <StateNumber>5817</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="12" parent="3" name="bear">
       <ObjectId>16440</ObjectId>
       <StateNumber>752</StateNumber>
     </table>
-    <table id="12" parent="3" name="test">
-      <ObjectId>27630</ObjectId>
-      <StateNumber>5794</StateNumber>
+    <table id="13" parent="3" name="test">
+      <ObjectId>27649</ObjectId>
+      <StateNumber>5814</StateNumber>
     </table>
-    <column id="13" parent="11" name="id">
+    <table id="14" parent="3" name="toy">
+      <ObjectId>27657</ObjectId>
+      <StateNumber>5817</StateNumber>
+    </table>
+    <column id="15" parent="12" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>740</StateNumber>
       <DefaultExpression>nextval(&apos;bear_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="14" parent="11" name="name">
+    <column id="16" parent="12" name="name">
       <Position>2</Position>
       <DataType>varchar(128)|0</DataType>
       <StateNumber>740</StateNumber>
     </column>
-    <column id="15" parent="11" name="weight">
+    <column id="17" parent="12" name="weight">
       <Position>6</Position>
       <DataType>double precision|0</DataType>
       <StateNumber>751</StateNumber>
       <DefaultExpression>0.5</DefaultExpression>
     </column>
-    <column id="16" parent="11" name="isclean">
+    <column id="18" parent="12" name="isclean">
       <Position>7</Position>
       <DataType>boolean|0</DataType>
       <StateNumber>752</StateNumber>
       <DefaultExpression>false</DefaultExpression>
     </column>
-    <index id="17" parent="11" name="bear_pkey">
+    <index id="19" parent="12" name="bear_pkey">
       <ObjectId>16445</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="18" parent="11" name="bear_pkey">
+    <key id="20" parent="12" name="bear_pkey">
       <ObjectId>16446</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>bear_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="19" parent="12" name="test_id">
+    <column id="21" parent="13" name="test_id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>5794</StateNumber>
+      <StateNumber>5814</StateNumber>
       <DefaultExpression>nextval(&apos;test_test_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="20" parent="12" name="x">
+    <column id="22" parent="13" name="quantityofdebt">
       <Position>2</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>5794</StateNumber>
+      <StateNumber>5814</StateNumber>
     </column>
-    <column id="21" parent="12" name="name">
+    <column id="23" parent="13" name="alias">
       <Position>3</Position>
       <DataType>varchar(80)|0</DataType>
-      <StateNumber>5794</StateNumber>
+      <StateNumber>5814</StateNumber>
     </column>
-    <column id="22" parent="12" name="isclean">
+    <column id="24" parent="13" name="isnahuy">
       <Position>4</Position>
       <DataType>boolean|0</DataType>
-      <StateNumber>5794</StateNumber>
+      <StateNumber>5814</StateNumber>
     </column>
-    <column id="23" parent="12" name="weight">
+    <column id="25" parent="13" name="time">
       <Position>5</Position>
-      <DataType>real|0</DataType>
-      <StateNumber>5794</StateNumber>
+      <DataType>date|0</DataType>
+      <StateNumber>5814</StateNumber>
     </column>
-    <index id="24" parent="12" name="test_pkey">
-      <ObjectId>27634</ObjectId>
+    <index id="26" parent="13" name="test_pkey">
+      <ObjectId>27653</ObjectId>
       <ColNames>test_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="25" parent="12" name="test_pkey">
-      <ObjectId>27635</ObjectId>
+    <key id="27" parent="13" name="test_pkey">
+      <ObjectId>27654</ObjectId>
       <ColNames>test_id</ColNames>
       <UnderlyingIndexName>test_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="14" name="toy_id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>5817</StateNumber>
+      <DefaultExpression>nextval(&apos;toy_toy_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="29" parent="14" name="name">
+      <Position>2</Position>
+      <DataType>varchar(80)|0</DataType>
+      <StateNumber>5817</StateNumber>
+    </column>
+    <column id="30" parent="14" name="isclean">
+      <Position>3</Position>
+      <DataType>boolean|0</DataType>
+      <StateNumber>5817</StateNumber>
+    </column>
+    <column id="31" parent="14" name="weight">
+      <Position>4</Position>
+      <DataType>real|0</DataType>
+      <StateNumber>5817</StateNumber>
+    </column>
+    <column id="32" parent="14" name="creationtime">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>5817</StateNumber>
+    </column>
+    <index id="33" parent="14" name="toy_pkey">
+      <ObjectId>27661</ObjectId>
+      <ColNames>toy_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="34" parent="14" name="toy_pkey">
+      <ObjectId>27662</ObjectId>
+      <ColNames>toy_id</ColNames>
+      <UnderlyingIndexName>toy_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
   </database-model>

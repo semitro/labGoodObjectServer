@@ -1,38 +1,31 @@
 package vt.smt.DB;
 
-import vt.smt.Data.Toy;
+import java.time.ZonedDateTime;
 
 /**
  * Created by semitro on 13.05.17.
  */
 public class ORM_test {
     public static void main(String argv[]){
-        System.out.println(ORM.getDDL(new Dolbaeb()));
-        System.out.println(ORM.getInsertQuery(new Dolbaeb()));
-
+        System.out.println(ORM.getDDL(new vt.smt.Data.Toy("sfs")));
+        System.out.println(ORM.getInsertQuery(new Test()));
     }
 }
+
 class Test{
-    int x = 0;
-
-    public int getX() {
-        return x;
-    }
-
-    vt.smt.Data.Toy toy;
-    Test(){
-       toy = new vt.smt.Data.Toy("sgg");
-    }
-}
-
-class Dolbaeb {
     int quantityOfDebt;
     String alias;
-    boolean isNahuy;
-    public Dolbaeb(){
+    boolean isIs;
+    ZonedDateTime time;
+    public Test(){
         alias = "ssfsfs";
-        isNahuy = true;
-        quantityOfDebt = 24;
+        isIs = true;
+        quantityOfDebt = 0;
+        time = ZonedDateTime.now();
+    }
+
+    public ZonedDateTime getTime() {
+        return time;
     }
 
     public int getQuantityOfDebt() {
@@ -51,11 +44,11 @@ class Dolbaeb {
         this.alias = alias;
     }
 
-    public boolean isNahuy() {
-        return isNahuy;
+    public boolean isIs() {
+        return isIs;
     }
 
-    public void setNahuy(boolean nahuy) {
-        isNahuy = nahuy;
+    public void setIs(boolean is) {
+        isIs = is;
     }
 }

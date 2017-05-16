@@ -1,13 +1,13 @@
 package vt.smt.DB;
 
-import com.sun.deploy.util.ReflectionUtil;
-import javafx.scene.effect.Reflection;
-import sun.reflect.ReflectionFactory;
-import sun.reflect.misc.ReflectUtil;
-
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.*;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
 
 /**
  * Created by semitro on 13.05.17.
@@ -44,7 +44,7 @@ public class ORM {
         //Строка, в которой постепенно будет формироваться запрос
         StringBuilder query = new StringBuilder("create table ");
         query.append(obj.getClass().getSimpleName() + "(\n ");
-        query.append(getID(obj) + "serial primary key,\n ");
+        query.append(getID(obj) + " serial primary key,\n ");
             for (Field field : getAllPrimitives(obj.getClass())) {
                 query.append(field.getName() + " ");
                 query.append(toPostresType(field.getType().getSimpleName()) +",\n " );
@@ -100,14 +100,17 @@ public class ORM {
         return result;
     }
     /**
-     * Преобразование для видения sql (например, булевские типы, закючённые в кавычки
-    *
+     * Преобразование типа для видения sql
+     * (например, значения булевских типов должны быть заключёны в кавычки)
      */
     private static String toPSQLString(Object data){
         if(data.getClass().getSimpleName().equals("Boolean") ||
            data.getClass().getSimpleName().equals("boolean") ||
            data.getClass().getSimpleName().equals("String") )
          return '\'' + data.toString() + '\'';
+        if(data instanceof ZonedDateTime){
+           return '\'' + ((ZonedDateTime)data).format(DateTimeFormatter.ofPattern("yyy-MM-dd")) + '\'';
+        }
      return data.toString();
     }
     /**
@@ -147,6 +150,8 @@ public class ORM {
                 return "real";
             case "boolean":
                 return "boolean";
+            case "ZonedDateTime":
+                return "date";
         }
         return null;
     }

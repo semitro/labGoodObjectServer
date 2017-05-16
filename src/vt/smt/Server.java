@@ -31,8 +31,7 @@ public class Server {
     }
     /**
     *   При выполнении команды, модифицирующей медведей, необходимо обновить данные у всех клиентов
-    *
-     */
+    **/
     private synchronized void executeModify(ServerCommand command,Client client){
        // receiver.resetAllInputCommands();
 
