@@ -9,9 +9,12 @@ public class ORM_test {
     public static void main(String argv[]){
         System.out.println(ORM.getDDL(new vt.smt.Data.Toy("sfs")));
         System.out.println(ORM.getInsertQuery(new Test()));
+        System.out.print(ORM.getDDL(new CCSa()));
     }
 }
-
+class CCSa{
+    boolean asgs;
+}
 class Test{
     int quantityOfDebt;
     String alias;
