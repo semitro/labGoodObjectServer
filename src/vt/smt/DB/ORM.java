@@ -1,13 +1,12 @@
 package vt.smt.DB;
 
-import com.sun.deploy.util.ReflectionUtil;
-import javafx.scene.effect.Reflection;
-import sun.reflect.ReflectionFactory;
-import sun.reflect.misc.ReflectUtil;
-
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.*;
+import java.time.ZonedDateTime;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
 
 /**
  * Created by semitro on 13.05.17.
@@ -106,8 +105,12 @@ public class ORM {
     private static String toPSQLString(Object data){
         if(data.getClass().getSimpleName().equals("Boolean") ||
            data.getClass().getSimpleName().equals("boolean") ||
-           data.getClass().getSimpleName().equals("String") )
+           data.getClass().getSimpleName().equals("String"))
          return '\'' + data.toString() + '\'';
+
+        if(data.getClass().equals(ZonedDateTime.class))
+            return '\'' + data.toString().substring(0,data.toString().indexOf('T')) + '\'';
+
      return data.toString();
     }
     /**
@@ -154,4 +157,3 @@ public class ORM {
         return object.getClass().getSimpleName() + "_id";
     }
 }
-ыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыы

@@ -12,11 +12,15 @@ import java.time.ZoneId;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by semitro on 21.04.17.
  */
 public class BearsInteraction {
+    private static final Logger log = Logger.getLogger(BearsInteraction.class.getName());
+
     private Properties user = new Properties();
     private Connection connect;
     private Statement statement;
@@ -24,6 +28,7 @@ public class BearsInteraction {
     private LinkedList<Toy> bearsCashe;
 
     private BearsInteraction(){
+
         try {
             Class.forName("org.postgresql.Driver");
             user.setProperty("user", "bear");
@@ -91,9 +96,9 @@ public class BearsInteraction {
             statement.execute("DELETE from Toy");
             bearsCashe.forEach(bear->{
                 try {
-                    statement.execute(
-                            ORM.getInsertQuery(bear)
-                    );
+                    String ormStr = ORM.getInsertQuery(bear);
+                    log.log(Level.INFO, ormStr);
+                    statement.execute(ormStr);
 //                    statement.execute(
 //                            "insert into bear(name, weight, isclean) VALUES('" +
 //                                    e.getName() + "', " + e.getWeight() + ", " + e.isClean() + ")");
